@@ -1,0 +1,7 @@
+{
+	"name": "@repo/shared",
+	"exports": {
+		".": "./src/index.js"
+	},
+	"type": "module"
+}

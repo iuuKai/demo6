@@ -1,0 +1,112 @@
+{
+	"version": 2,
+	"buildCommand": "pnpm turbo run build",
+	"outputDirectory": ".",
+	"installCommand": "pnpm install --no-frozen-lockfile",
+	"rewrites": [
+		{
+			"source": "/astro-ssg(/?)",
+			"destination": "/apps/astro-ssg/dist/index.html"
+		},
+		{
+			"source": "/astro-ssg/:path*",
+			"destination": "/apps/astro-ssg/dist/:path*"
+		},
+		{
+			"source": "/hexo-ssg(/?)",
+			"destination": "/apps/hexo-ssg/public/index.html"
+		},
+		{
+			"source": "/hexo-ssg/:path*/",
+			"destination": "/apps/hexo-ssg/public/:path*/index.html"
+		},
+		{
+			"source": "/hexo-ssg/:path*",
+			"destination": "/apps/hexo-ssg/public/:path*"
+		},
+		{
+			"source": "/next-ssg(/?)",
+			"destination": "/apps/next-ssg/out/index.html"
+		},
+		{
+			"source": "/next-ssg/:path*.:ext",
+			"destination": "/apps/next-ssg/out/:path*.:ext"
+		},
+		{
+			"source": "/next-ssg/:path*",
+			"destination": "/apps/next-ssg/out/:path*.html"
+		},
+		{
+			"source": "/nuxt4-ssg(/?)",
+			"destination": "/apps/nuxt4-ssg/.output/public/index.html"
+		},
+		{
+			"source": "/nuxt4-ssg/:path*",
+			"destination": "/apps/nuxt4-ssg/.output/public/:path*"
+		},
+		{
+			"source": "/react-spa(/?)",
+			"destination": "/apps/react-spa/dist/index.html"
+		},
+		{
+			"source": "/react-spa/:path*.:ext",
+			"destination": "/apps/react-spa/dist/:path*.:ext"
+		},
+		{
+			"source": "/react-spa/:path*",
+			"destination": "/apps/react-spa/dist/index.html"
+		},
+		{
+			"source": "/vanilla-spa(/?)",
+			"destination": "/apps/vanilla-spa/index.html"
+		},
+		{
+			"source": "/vanilla-spa/:path*",
+			"destination": "/apps/vanilla-spa/:path*"
+		},
+		{
+			"source": "/vitepress-ssg(/?)",
+			"destination": "/apps/vitepress-ssg/docs/.vitepress/dist/index.html"
+		},
+		{
+			"source": "/vitepress-ssg/:path*",
+			"destination": "/apps/vitepress-ssg/docs/.vitepress/dist/:path*"
+		},
+		{
+			"source": "/vue3-spa(/?)",
+			"destination": "/apps/vue3-spa/dist/index.html"
+		},
+		{
+			"source": "/vue3-spa/:path*.:ext",
+			"destination": "/apps/vue3-spa/dist/:path*.:ext"
+		},
+		{
+			"source": "/vue3-spa/:path*",
+			"destination": "/apps/vue3-spa/dist/index.html"
+		},
+		{
+			"source": "/vuepress-ssg(/?)",
+			"destination": "/apps/vuepress-ssg/docs/.vuepress/dist/index.html"
+		},
+		{
+			"source": "/vuepress-ssg/:path*",
+			"destination": "/apps/vuepress-ssg/docs/.vuepress/dist/:path*"
+		},
+		{
+			"source": "/webpack-ejs-mpa(/?)",
+			"destination": "/apps/webpack-ejs-mpa/dist/home/index.html"
+		},
+		{
+			"source": "/webpack-ejs-mpa/:path*",
+			"destination": "/apps/webpack-ejs-mpa/dist/:path*"
+		},
+		{
+			"source": "/(js|css|images)/(.*)",
+			"destination": "/apps/ahome/public/$1/$2"
+		},
+		{
+			"source": "/",
+			"destination": "/apps/ahome/index.html"
+		}
+	]
+}

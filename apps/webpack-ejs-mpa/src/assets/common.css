@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		sans-serif;
+}
+.app-container {
+	min-height: 100vh;
+	background-color: #e8f5e9;
+	padding: 30px 20px;
+}
+.nav {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+.nav a {
+	text-decoration: none;
+	color: #1677ff;
+	font-weight: 500;
+}
+.nav a:hover {
+	color: #0958d9;
+}
+.page-wrap {
+	max-width: 800px;
+	margin: 0 auto;
+	font-size: 18px;
+}

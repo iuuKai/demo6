@@ -1,0 +1,13 @@
+.error-tip {
+	margin-top: 20px;
+	color: #ff4d4f;
+	font-weight: 500;
+}
+.user-list {
+	margin-top: 20px;
+	list-style: none;
+}
+.user-list li {
+	padding: 10px 0;
+	border-bottom: 1px solid #cccccc;
+}

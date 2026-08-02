@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vanilla SPA</title>
+		<link rel="stylesheet" href="/vanilla-spa/css/style.css" />
+	</head>
+	<body>
+		<div class="app-container">
+			<nav class="nav">
+				<a data-page="home">Home</a>
+				<a data-page="about">About</a>
+				<a data-page="link">Link</a>
+			</nav>
+			<div class="page-content" id="viewContainer"></div>
+		</div>
+
+		<!-- 加载顺序：JQ -> 主逻辑 -->
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="/vanilla-spa/js/main.js"></script>
+	</body>
+</html>

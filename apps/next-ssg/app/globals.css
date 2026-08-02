@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: system-ui, sans-serif;
+}
+.app-container {
+	min-height: 100vh;
+	background: #d7d2cc;
+	padding: 30px 20px;
+}
+.nav {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+.nav a {
+	text-decoration: none;
+	color: #1677ff;
+	font-weight: 500;
+	cursor: pointer;
+}
+.nav a:hover {
+	color: #0958d9;
+}
+.page-content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+.error-tip {
+	margin-top: 20px;
+	color: #ff4d4f;
+	font-weight: 500;
+}
+.user-list {
+	margin-top: 20px;
+	list-style: none;
+}
+.user-list li {
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+.demo-img {
+	max-width: 100%;
+	margin-top: 20px;
+	border-radius: 8px;
+}

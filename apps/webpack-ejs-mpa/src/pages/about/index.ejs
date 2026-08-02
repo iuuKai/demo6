@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Webpack EJS MPA</title>
+	</head>
+	<body>
+		<div class="app-container">
+			<nav class="nav">
+				<a href="<%= BASE_URL %>home/index.html">Home</a>
+				<a href="<%= BASE_URL %>about/index.html">About</a>
+				<a href="<%= BASE_URL %>link/index.html">Link</a>
+			</nav>
+			<div class="page-wrap">
+				<h2>About Page</h2>
+				<img src="<%= require('../../assets/demo.jpg') %>" alt="demo" class="demo-img" />
+			</div>
+		</div>
+	</body>
+</html>

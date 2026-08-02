@@ -1,0 +1,23 @@
+{
+	"name": "monorepo-demo6",
+	"private": true,
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"dev": "turbo run dev",
+		"build": "turbo run build",
+		"lint": "turbo run lint"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@11.4.0",
+	"type": "module",
+	"dependencies": {
+		"express": "^5.2.1",
+		"mockjs": "^1.1.0"
+	},
+	"devDependencies": {
+		"turbo": "^2.10.7"
+	}
+}

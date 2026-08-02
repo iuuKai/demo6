@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: system-ui, sans-serif;
+}
+
+/* 项目专属背景色 */
+.app-container {
+	min-height: 100vh;
+	background-color: #e6f7ff;
+	padding: 30px 20px;
+}
+
+/* 导航样式 */
+.nav {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #0066cc;
+	font-weight: 500;
+}
+
+.nav a:hover {
+	color: #004080;
+}
+
+/* 内容居中 */
+.page-content {
+	max-width: 800px;
+	margin: 0 auto;
+	font-size: 18px;
+}

@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base>
+  <h2>User List</h2>
+  <div id="user-box">加载中...</div>
+
+  <script>
+    const container = document.getElementById('user-box');
+
+    async function fetchUserList() {
+      try {
+        const response = await fetch('/api/user/all');
+        const res = await response.json();
+        if (res.data && Array.isArray(res.data)) {
+          container.innerHTML = `
+            <ul class="user-list">
+              ${res.data.map(u => `<li>${u.name} - ${u.email}</li>`).join('')}
+            </ul>
+          `;
+        } else {
+          throw new Error('接口请求失败');
+        }
+      } catch (err) {
+        container.innerHTML = `<p style="color:red;">请求失败：${err.message}</p>`;
+        console.error(err);
+      }
+    }
+
+    fetchUserList();
+  </script>
+</Base>

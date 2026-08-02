@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Express View</title>
+		<link rel="stylesheet" href="/css/style.css" />
+		<script defer src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script defer src="/js/index.js" type="module"></script>
+	</head>
+
+	<body>
+		<!-- 顶部导航 -->
+		<div class="header">
+			<div class="nav">
+				<div class="logo">项目导航中心</div>
+			</div>
+		</div>
+
+		<!-- 搜索框 -->
+		<div class="search-box">
+			<input type="text" class="search-input" placeholder="搜索项目名称/描述..." />
+		</div>
+
+		<!-- 标签筛选 -->
+		<div class="tags"></div>
+
+		<!-- 项目卡片区域 -->
+		<div class="container">
+			<h2 class="section-title">项目集合</h2>
+			<div class="card-grid"></div>
+		</div>
+
+		<!-- 滚动到顶部按钮 -->
+		<button class="scroll-top" id="scrollTopBtn" aria-label="滚动到顶部">
+			<svg
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			>
+				<polyline points="18 15 12 9 6 15"></polyline>
+			</svg>
+		</button>
+	</body>
+</html>

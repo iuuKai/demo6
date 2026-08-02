@@ -1,0 +1,18 @@
+{
+	"name": "nuxt4-ssg",
+	"version": "1.0.0",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "nuxt generate",
+		"dev": "nuxt dev --port 1003",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"dependencies": {
+		"nuxt": "^4.4.8",
+		"vue": "^3.5.35",
+		"vue-router": "^5.1.0"
+	}
+}

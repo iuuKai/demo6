@@ -1,0 +1,7 @@
+---
+import Base from '../layouts/Base.astro';
+import { joinBaseUrl } from '../utils/tools.js';
+---
+<Base>
+  <img src={joinBaseUrl('/demo.jpg')} alt="Demo图片" class="demo-img" />
+</Base>
