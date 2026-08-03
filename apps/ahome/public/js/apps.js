@@ -4,14 +4,14 @@ export const APPS_CONFIG = [
 		description: '原生 JavaScript 单页应用',
 		banner: '/images/htmlcssjs.png',
 		type: 'spa',
-		path: '/vanilla-spa/'
+		path: '/vanilla-spa'
 	},
 	{
 		name: 'webpack-ejs-mpa',
 		description: 'Webpack + EJS 多页应用',
 		banner: '/images/webpackejs.png',
 		type: 'mpa',
-		path: '/webpack-ejs-mpa/home/'
+		path: '/webpack-ejs-mpa/home/index.html'
 	},
 	{
 		name: 'vue3-spa',
