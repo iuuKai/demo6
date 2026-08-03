@@ -4,14 +4,14 @@ export const APPS_CONFIG = [
 		description: '原生 JavaScript 单页应用',
 		banner: '/images/htmlcssjs.png',
 		type: 'spa',
-		path: '/vanilla-spa'
+		path: '/vanilla-spa/'
 	},
 	{
 		name: 'webpack-ejs-mpa',
 		description: 'Webpack + EJS 多页应用',
 		banner: '/images/webpackejs.png',
 		type: 'mpa',
-		path: '/webpack-ejs-mpa/home/index.html'
+		path: '/webpack-ejs-mpa/home/'
 	},
 	{
 		name: 'vue3-spa',
@@ -39,14 +39,14 @@ export const APPS_CONFIG = [
 		description: 'VitePress 文档站点',
 		banner: '/images/vitepress.png',
 		type: 'ssg',
-		path: '/vitepress-ssg'
+		path: '/vitepress-ssg/'
 	},
 	{
 		name: 'hexo-ssg',
 		description: 'Hexo 静态博客站点',
 		banner: '/images/hexo.png',
 		type: 'ssg',
-		path: '/hexo-ssg'
+		path: '/hexo-ssg/'
 	},
 	{
 		name: 'astro-ssg',
@@ -60,13 +60,13 @@ export const APPS_CONFIG = [
 		description: 'Nuxt 4 静态站点',
 		banner: '/images/nuxt.png',
 		type: 'ssg',
-		path: '/nuxt4-ssg'
+		path: '/nuxt4-ssg/'
 	},
 	{
 		name: 'next-ssg',
 		description: 'Next 静态站点',
 		banner: '/images/next.png',
 		type: 'ssg',
-		path: '/next-ssg'
+		path: '/next-ssg/'
 	}
 ]
