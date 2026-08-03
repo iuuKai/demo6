@@ -1,9 +1,14 @@
 export default function handler(req, res) {
 	res.status(200).end(
-		JSON.stringify({
-			message: 'catch-all hit',
-			url: req.url,
-			method: req.method
-		})
+		JSON.stringify(
+			{
+				url: req.url,
+				method: req.method,
+				query: req.query,
+				headers: req.headers
+			},
+			null,
+			2
+		)
 	)
 }
