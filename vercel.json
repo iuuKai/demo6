@@ -3,6 +3,17 @@
 	"buildCommand": "pnpm turbo run build",
 	"outputDirectory": ".",
 	"installCommand": "pnpm install --no-frozen-lockfile",
+	"headers": [
+		{
+			"source": "/(.*)",
+			"headers": [
+				{
+					"key": "Permissions-Policy",
+					"value": "fullscreen=(), geolocation=(), microphone=(), camera=()"
+				}
+			]
+		}
+	],
 	"rewrites": [
 		{
 			"source": "/astro-ssg(/?)",

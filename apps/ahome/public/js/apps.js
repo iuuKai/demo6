@@ -25,7 +25,7 @@ export const APPS_CONFIG = [
 		description: 'React 单页应用',
 		banner: '/images/vitereact.png',
 		type: 'spa',
-		path: '/react-spa'
+		path: '/react-spa/'
 	},
 	{
 		name: 'vuepress-ssg',
