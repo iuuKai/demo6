@@ -105,6 +105,10 @@
 			"destination": "/apps/ahome/public/$1/$2"
 		},
 		{
+			"source": "/api/:path*",
+			"destination": "/api/[...path]"
+		},
+		{
 			"source": "/",
 			"destination": "/apps/ahome/index.html"
 		}
